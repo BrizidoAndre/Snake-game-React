@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Snake Game em React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🐍 Jogo da Cobrinha Reimplementado com React
 
-## Available Scripts
+O **Snake Game em React** é uma reimplementação do clássico jogo da cobrinha, desta vez utilizando a biblioteca **React** para gerenciar o estado e a lógica do jogo, e a API **Canvas** para a renderização gráfica. Este projeto demonstra a aplicação de conceitos modernos de desenvolvimento *frontend* (como *hooks* e componentes funcionais) para a criação de jogos interativos.
 
-In the project directory, you can run:
+### ✨ Funcionalidades em Destaque
 
-### `npm start`
+*   **Desenvolvimento em React:** Utiliza `useState`, `useEffect` e `useRef` para um gerenciamento de estado e ciclo de vida do jogo eficiente e reativo.
+*   **Renderização com Canvas:** Mantém a renderização de alto desempenho através do elemento `<canvas>`, com a lógica de desenho controlada pelo React.
+*   **Lógica de Jogo Completa:** Inclui todas as mecânicas essenciais do Snake, como movimento contínuo, crescimento da cobra e detecção de colisão.
+*   **Temas (Dark/Light Mode):** O código sugere a implementação de um sistema de temas (escuro e claro) para o jogo.
+*   **Estrutura Modular:** O projeto é bem estruturado, com a lógica do jogo encapsulada no componente `Game.jsx` e componentes de UI separados (`posWelcome`, `welcome`).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🛠️ Tecnologias Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+| Tecnologia | Uso Principal |
+| :--- | :--- |
+| **React** | Biblioteca JavaScript para construção da interface e lógica do jogo. |
+| **JavaScript (ES6+)** | Lógica do jogo e manipulação de estado. |
+| **Canvas API** | Renderização gráfica do jogo. |
+| **CSS** | Estilização dos componentes e do layout. |
 
-### `npm test`
+### 📂 Estrutura do Projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+O projeto segue a estrutura padrão de um aplicativo React, com foco nos seguintes diretórios:
 
-### `npm run build`
+```
+Snake-game-React/
+├── public/         # Arquivos estáticos
+├── src/
+│   ├── assets/     # Ativos de mídia (imagens, etc.)
+│   ├── components/ # Componentes reutilizáveis (ex: Button)
+│   ├── pages/      # Componentes de página (game, posWelcome, welcome)
+│   ├── utils/      # Funções utilitárias (ex: imageBase)
+│   └── App.js      # Componente principal e roteamento
+└── package.json    # Dependências e scripts do projeto
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🚀 Como Executar
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para rodar o projeto localmente, siga os passos abaixo:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# 1. Clone o repositório
+git clone https://github.com/BrizidoAndre/Snake-game-React.git
 
-### `npm run eject`
+# 2. Navegue até o diretório do projeto
+cd Snake-game-React
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# 3. Instale as dependências
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# 4. Inicie o servidor de desenvolvimento
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+O jogo estará disponível em `http://localhost:3000` (ou outra porta, se a 3000 estiver ocupada).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 📝 Licença
 
-## Learn More
+Este projeto está sob a licença [MIT](https://choosealicense.com/licenses/mit/).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+*Desenvolvido por [BrizidoAndre](https://github.com/BrizidoAndre)*
