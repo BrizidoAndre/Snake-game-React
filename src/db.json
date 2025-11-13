@@ -1,0 +1,23 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "andre",
+      "password": "senhaMaluconauuuuu"
+    },
+    {
+      "id": 2,
+      "username": "Teste",
+      "password": "asldkfjaçsldfkjaçs"
+    }
+  ],
+  "ranking": [
+    {
+      "username": "André",
+      "points": 30,
+      "fruits": 3,
+      "medals": 1,
+      "trophies": 0
+    }
+  ]
+}
